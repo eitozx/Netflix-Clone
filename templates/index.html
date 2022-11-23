@@ -1,0 +1,149 @@
+{% load static %}
+{% include './include/base.html' with title="Netflix - Watch TV Shows Online, Watch Movies Online" description="Watch Netflix movies, & TV shows online or stream right to your smart TV, game"%}
+<div>
+  <div class="absolute top">
+    {% include './include/navbar.html' %}
+
+    <!-- Main Text -->
+    <div class="mx-5 md:mx-72 mt-40">
+      <div class="font-bold text-3xl md:text-7xl">Unlimited movies, TV shows and more.</div>
+      <div class="text-medium md:text-2xl mt-2">Watch anywhere. Cancel anytime.</div>
+      <div class="text-lg mt-3 md:text-xl">Ready to watch? Enter your email to create or restart your membership.</div>
+
+      <div class="md:flex md:flex-row mt-2 md:mt-5">
+        <a href="{% url 'account_signup' %}" class="mx-auto">
+          <button type="submit" class="mt-2 md:mt-0 bg-red-700 p-2 px-5 md:px-9 md:py-3 md:text-4xl">
+            Get Started
+          </button>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+    <img src="{% static 'image/index_background.min.png' %}" class="object-cover w-full h-screen md:h-screen">
+</div>
+
+
+  <!-- Divider -->
+  <div class="bg-gray-900 py-1"></div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-center md:mx-56 mx-5 my-10">
+    <div class="md:w-auto md:h-auto justify-center my-auto">
+      <p class="text-2xl md:text-6xl md:text-left font-bold">Enjoy on your TV.</p>
+      <p class="md:text-left text-lg md:text-2xl mt-5">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+    </div>
+    <div>
+      <img src="{% static 'image/tv.png' %}" alt="TV">
+    </div>
+  </div>
+  
+  <!-- Divider -->
+  <div class="bg-gray-900 py-1"></div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-center md:mx-64 mx-5 my-10">
+    <div class="order-2 md:order-1">
+      <img src="{% static 'image/mobile-0819.jpg' %}" alt="TV">
+    </div>
+    <div class="md:w-auto md:h-auto justify-center my-auto order-1 md:order-2">
+      <p class="text-2xl md:text-6xl md:text-left font-bold">Download your shows to watch offline.</p>
+      <p class="md:text-left text-lg md:text-2xl mt-5">Save your favourites easily and always have something to watch.</p>
+    </div>
+  </div>
+  
+  <!-- Divider -->
+  <div class="bg-gray-900 py-1"></div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-center md:mx-64 mx-5 my-10">
+    <div class="md:w-auto md:h-auto justify-center my-auto">
+      <p class="text-2xl md:text-6xl md:text-left font-bold">Watch everywhere.</p>
+      <p class="md:text-left text-lg md:text-2xl mt-5">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    </div>
+    <div>
+      <img src="{% static 'image/device-pile-in.png' %}" alt="TV">
+    </div>
+  </div>
+  
+  <!-- Divider -->
+  <div class="bg-gray-900 py-1"></div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-center md:mx-64 mx-5 my-10">
+    <div>
+      <img src="{% static 'image/kidsValueProp.png' %}" alt="TV">
+    </div>
+    <div class="md:w-auto md:h-auto justify-center my-auto">
+      <p class="text-2xl md:text-6xl md:text-left font-bold">Create profiles for children.</p>
+      <p class="md:text-left text-lg md:text-2xl mt-5">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+    </div>
+  </div>
+  
+  <!-- Divider -->
+  <div class="bg-gray-900 py-1"></div>
+  
+  <section id="FAQ" class="mx-5 md:mx-72">
+    <div class="my-10 text-3xl md:text-5xl font-bold">Frequently Asked Questions</div>
+  
+      <div id="accordion-color" data-accordion="collapse" class="text-lg md:mx-16 md:text-2xl text-white text-left font-normal " data-active-classes="text-white" data-inactive-classes="text-white">
+  
+        <h2 id="accordion-color-heading-1" class="mt-3">
+          <button type="button" class="flex justify-between items-center p-5 w-full bg-neutral-700" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+            What is this project?
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-1" class="hidden mt-1" aria-labelledby="accordion-color-heading-1">
+          <div class="p-4 bg-neutral-700 mt-1">
+            This project is a Netflix Clone, <i>NOT</i> associated with Official <a href="https://netflix.com" target="_blank" class="text-blue-500 hover:underline">Netflix</a> in any way. Made by <a class="text-blue-500 hover:underline" target="_blank" href="/developer">Eito (/eitozx)</a> just for experience & fun.
+          </div>
+        </div>
+  
+        <h2 id="accordion-color-heading-2" class="mt-3">
+          <button type="button" class="flex justify-between items-center p-5 w-full bg-neutral-700" data-accordion-target="#accordion-color-body-2" aria-expanded="true" aria-controls="accordion-color-body-2">
+            Is this an open source project?
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-2" class="hidden mt-1" aria-labelledby="accordion-color-heading-2">
+          <div class="p-4 bg-neutral-700 mt-1">
+            Yes, you can find the project on my <a href="{% url 'project' %}" class="text-blue-500 hover:underline" target="_blank">Github</a>.
+          </div>
+        </div>
+  
+        <h2 id="accordion-color-heading-3" class="mt-3">
+          <button type="button" class="flex justify-between items-center p-5 w-full bg-neutral-700" data-accordion-target="#accordion-color-body-3" aria-expanded="true" aria-controls="accordion-color-body-3">
+            Can I contribute to this project?
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-3" class="hidden mt-1" aria-labelledby="accordion-color-heading-3">
+          <div class="p-4 bg-neutral-700 mt-1">
+            Yes, but please open an issue before making any pull request.
+          </div>
+        </div>
+  
+        <h2 id="accordion-color-heading-4" class="mt-3">
+          <button type="button" class="flex justify-between items-center p-5 w-full bg-neutral-700" data-accordion-target="#accordion-color-body-4" aria-expanded="true" aria-controls="accordion-color-body-4">
+            How can I support/donate?
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-4" class="hidden mt-1" aria-labelledby="accordion-color-heading-4">
+          <div class="p-4 bg-neutral-700 mt-1">
+            You can <a href="{% url 'donate' %}" target="_blank" class="text-blue-500 hover:underline">buy me a ko-fi!</a>
+          </div>
+        </div>
+  
+    </div>
+    
+    <div class="text-lg mt-3 md:text-xl md:mt-16">Ready to watch? Enter your email to create or restart your membership.</div>
+  </section>
+  <div class="md:flex md:flex-row my-5 md:mt-5">
+    <a href="{% url 'account_signup' %}" class="mx-auto">
+      <button type="submit" class="md:mt-0 bg-red-700 p-2 px-5 md:px-9 md:py-3 md:text-4xl">
+        Get Started
+      </button>
+    </a>
+  </div>
+
+<!-- Divider -->
+<div class="bg-gray-900 py-1"></div>
+{% include './include/footer.html' %}
+
+</body>
+</html>

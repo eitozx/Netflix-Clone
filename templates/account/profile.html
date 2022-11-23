@@ -1,0 +1,18 @@
+{% load static %}{% load account %}
+{% include 'include/base.html' with title="Netflix" description="Watch Netflix movies, & TV shows online or stream right to your smart TV, game"%}
+{% include "include/navbar.html" %}
+
+  <!-- Main Text -->
+  <div class="md:mx-96 mt-12 md:mt-20">
+    {% user_display user as user %}
+    <div class="font-bold text-3xl md:text-5xl">Who is Watching {{ user | title }}?</div>
+      
+      {% for i in profiles %}
+        {{i.name}}
+      {% endfor %}
+
+  </div>
+  
+{% include 'include/footer.html' %}
+</body>
+</html>

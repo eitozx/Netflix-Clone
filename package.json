@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "flowbite": "^1.4.5"
+  }
+}
